@@ -3,43 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wydex Header</title>
+  <title>Wydex Media</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/@phosphor-icons/web"></script> <!-- Icon library -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
 </head>
 <body class="bg-white">
-  <header class="flex items-center justify-between px-8 py-4 shadow-sm">
+  <header class="flex   flex-col md:flex-row items-center md:justify-around justify-between w-full px-4 lg:w-[83%]  mx-auto md:px-8 py-4 shadow-sm">
     <!-- Logo -->
-    <div class="flex items-center space-x-2">
-      <img src="./src/images/WYDEX LOGO 1.png" alt="Wydex Logo" class="h-10 w-auto" />
+    <div class="mr-52  mb-4 md:mb-0 ">
+      <img src="./src/images/WYDEX LOGO 1.png" alt="WYDEX LOGO 1" class="h-10 w-auto" />
     </div>
-
+  
+    <!-- Mobile Menu Button (visible only on small screens) -->
+    <button id="mobile-menu-button" class="md:hidden absolute  right-4 top-4 text-gray-700">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  
     <!-- Navigation -->
-    <nav>
-      <ul class="flex space-x-6 text-sm font-semibold text-gray-900">
-        <li><a href="#" class="hover:text-teal-600">Home</a></li>
-        <li><a href="#" class="hover:text-teal-600">About us</a></li>
-        <li><a href="#" class="hover:text-teal-600">Services</a></li>
-        <li><a href="#" class="hover:text-teal-600">Clients</a></li>
-        <li><a href="#" class="hover:text-teal-600">Blog</a></li>
-        <li><a href="#" class="hover:text-teal-600">Career</a></li>
-        <li><a href="#" class="hover:text-teal-600">Testimonials</a></li>
+    <nav id="nav-menu" class="hidden md:block w-full md:w-auto ">
+      <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm font-semibold text-gray-900 items-center">
+        <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">Home</a></li>
+        <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">About us</a></li>
+        <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">Services</a></li>
+        <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">Clients</a></li>
+        <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">Blog</a></li>
+        <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">Career</a></li>
+        <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">Testimonials</a></li>
+        <li><a href="" class="mt-4 md:mt-0 flex items-center justify-center space-x-2 w-28 px-2 h-8 rounded-full bg-gradient-to-r from-teal-700 to-orange-500 text-white font-medium shadow-md hover:shadow-lg transition">
+          <i class="ph ph-phone text-lg"></i>
+          <span>Contact Us</span></a>
+        </li>
       </ul>
     </nav>
-
+  
     <!-- Contact Button -->
-    <a href="#" class="flex items-center space-x-2 px-4 py-2 rounded-full bg-gradient-to-r from-teal-700 to-orange-500 text-white font-medium shadow-md hover:shadow-lg transition">
-      <i class="ph ph-phone text-lg"></i>
-      <span>Contact Us</span>
-    </a>
+   
   </header>
+  
+  <!-- JavaScript for mobile menu toggle -->
+ 
 
-  <section class="flex flex-col lg:flex-row items-center justify-between px-8 py-16 max-w-7xl mx-auto">
+  <section style="background-image: url('./src/images/waistup-portrait-pretty-happy-redhead-female-student-studying-working-design-project-wearing-gl.jpg')" class="flex  bg-left  min-h-[500px] bg-no-repeat w-full flex-col lg:flex-row items-center justify-between   mx-auto bg-cover" >
     <!-- Left Image -->
     <div class="lg:w-1/2 mb-10 lg:mb-0 relative">
-      <img src="./src/images/girl wikthout bg.png" alt="Woman with tablet" class="w-full max-w-md mx-auto">
+      <!-- <img src="./src/images/waistup-portrait-pretty-happy-redhead-female-student-studying-working-design-project-wearing-gl.jpg" alt="Woman with tablet" class="w-full max-w-md mx-auto"> -->
       
       <!-- Decorative triangles -->
       <img src="./src/images/Polygon 8.png" alt="" class="absolute top-0 left-0 w-16 hidden lg:block">
@@ -51,9 +62,9 @@
       <h1 class="text-4xl lg:text-5xl font-extrabold text-teal-700 leading-tight">
         Building brands <br> for the digital future!
       </h1>
-      <p class="text-lg font-semibold text-gray-900">
+      <h1 class="text-lg font-semibold text-gray-900">
         Best digital marketing agency in <span class="text-black font-bold">Calicut.</span>
-      </p>
+      </h1>
       <p class="text-gray-700 max-w-md">
         We excel at enhancing your brand's online presence with customized digital marketing strategies
         crafted to boost traffic and elevate engagement
@@ -64,35 +75,33 @@
     </div>
   </section>
 
-  <section class="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center border-b">
+  <section class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 items-center  ">
     <!-- Left Content -->
-    <div>
+    <div class="p-6">
       <h2 class="text-4xl font-extrabold mb-6">ABOUT US</h2>
-
-      <p class="font-semibold text-lg mb-6">
+      <p class="font-semibold mb-4 ">
         At Wydex Media, we are a passionate team of digital marketing professionals based in Calicut, committed to helping businesses grow online. As the best digital marketing agency in Calicut, Kerala we believe that every brand has a unique story — and our mission is to bring that story to life through creative and result-driven marketing strategies.
       </p>
-
       <p class="text-sm text-gray-700 mb-4">
-        We specialize in services like social media marketing, SEO, branding, graphic design, and paid ads, all tailored to fit your brand’s specific goals. Our team works closely with each client, understanding their business and creating campaigns that drive real engagement and leads.
+        We specialize in services like social media marketing, SEO, branding, graphic design, and paid ads, all tailored to fit your brand's specific goals. Our team works closely with each client, understanding their business and creating campaigns that drive real engagement and leads.
       </p>
-
       <p class="text-sm text-gray-700 mb-4">
-        What makes us different is our focus on simplicity, consistency, and measurable growth. We don’t believe in one-size-fits-all solutions — we create strategies that actually work. Whether you’re a startup or a growing brand, Wydex Media is here to guide you at every step of your digital journey.
+        What makes us different is our focus on simplicity, consistency, and measurable growth. We don't believe in one-size-fits-all solutions — we create strategies that actually work. Whether you're a startup or a growing brand, Wydex Media is here to guide you at every step of your digital journey.
       </p>
-
-      <p class="text-sm text-gray-700 mb-6">
+      <p class="text-sm text-gray-700 mb-4">
         Let us help you reach the right audience, build a strong online presence, and turn your brand into a success story.
       </p>
-
-      <button class="mt-4 px-6 py-2 rounded-full border border-black hover:bg-black hover:text-white transition font-medium">
-        Know more
-      </button>
+      <div class="text-center">
+        <button class="mt-4 px-6 py-2 rounded-full border border-black hover:bg-black hover:text-white transition font-medium">
+          Know more
+        </button>
+      </div>
     </div>
-
+    
+    
     <!-- Right Images (stacked) -->
-    <div class="space-y-8 flex flex-col items-center md:items-end">
-      <img src="./src/images/about us.png" alt="Team working" class="w-52 rounded-md shadow-md">
+    <div class="space-y-8 flex flex-col  items-center md:items-center">
+      <img src="./src/images/about us.png" alt="Team working" class="w-full h-[350px] md:w-72 mt-10 ">
      
     </div>
   </section>
@@ -106,51 +115,77 @@
     </p>
   
     <!-- Services Cards -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+    <div class="grid grid-cols-1  lg:grid-cols-4 gap-6 mb-12">
       <!-- Card 1 -->
-      <div class="bg-gradient-to-br from-teal-700 to-orange-500 text-white p-6 rounded-2xl shadow-lg">
-        <h3 class="text-4xl font-bold mb-2">01</h3>
-        <h4 class="text-lg font-bold mb-2">Social Media Marketing</h4>
-        <p class="text-sm leading-relaxed text-gray-200">
-          Wydex Media is one of the best digital marketing agencies in Calicut, helping businesses grow with expert social media marketing strategies. We create engaging content, targeted ads, and data-driven campaigns to boost your brand on Facebook, Instagram, and LinkedIn.
-        </p>
+      <div class="w-full md:w-64 rounded-2xl shadow-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-900 to-black text-white">
+        <!-- Number with gradient effect -->
+        <div class="p-6">
+          <div class="text-6xl font-bold mb-4 text-start ">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-orange-500">01</span>
+          </div>
+          
+          <!-- Title -->
+          <h2 class="text-2xl font-bold mb-4">Social Media Marketing</h2>
+          
+          <!-- Content -->
+          <p class="text-sm text-gray-300 mb-4">
+            Wydax Media is one of the best digital marketing agencies in Calicut, helping businesses grow with expert social media marketing strategies. We create engaging content, targeted ads, and data-driven campaigns to boost your brand on Facebook, Instagram, and LinkedIn.
+          </p>
+        </div>
       </div>
   
       <!-- Card 2 -->
-      <div class="bg-gradient-to-br from-teal-700 to-orange-500 text-white p-6 rounded-2xl shadow-lg">
-        <h3 class="text-4xl font-bold mb-2">02</h3>
-        <h4 class="text-lg font-bold mb-2">SEO</h4>
-        <p class="text-sm leading-relaxed text-gray-200">
+      <div class="w-full md:w-64 rounded-2xl shadow-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-900 to-black text-white">
+        <!-- Number with gradient effect -->
+        <div class="p-6">
+          <div class="text-6xl font-bold mb-4 text-start ">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-orange-500">02</span>
+          </div>
+          
+          <!-- Title -->
+        <h2 class="text-2xl font-bold mb-2">SEO</h2>
+        <p class="text-sm text-gray-300 mb-2">
           As one of the best digital marketing agencies in Calicut, we improve your website’s Google ranking with expert SEO strategies. Our services include keyword research, on-page SEO, content optimization, and link building to drive long-term results.
         </p>
       </div>
+      </div>
   
       <!-- Card 3 -->
-      <div class="bg-gradient-to-br from-teal-700 to-orange-500 text-white p-6 rounded-2xl shadow-lg">
-        <h3 class="text-4xl font-bold mb-2">03</h3>
-        <h4 class="text-lg font-bold mb-2">Web design & development</h4>
-        <p class="text-sm leading-relaxed text-gray-200">
+      <div class="w-full md:w-64 rounded-2xl shadow-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-900 to-black text-white">
+        <!-- Number with gradient effect -->
+        <div class="p-6">
+          <div class="text-6xl font-bold mb-4 text-start ">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-orange-500">03</span>
+          </div>
+        <h2 class="text-2xl font-bold mb-2">Web design & development</h2>
+        <p class="text-sm  text-gray-300 mb-4">
           We craft responsive, SEO-friendly websites that blend design with performance. Our web solutions ensure smooth user experience, fast loading speeds, mobile optimization, and a strong online presence that drives conversions.
         </p>
       </div>
-  
+      </div>
       <!-- Card 4 -->
-      <div class="bg-gradient-to-br from-teal-700 to-orange-500 text-white p-6 rounded-2xl shadow-lg">
-        <h3 class="text-4xl font-bold mb-2">04</h3>
-        <h4 class="text-lg font-bold mb-2">Branding & strategy</h4>
-        <p class="text-sm leading-relaxed text-gray-200">
+      <div class="w-full md:w-64 rounded-2xl shadow-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-900 to-black text-white">
+        <!-- Number with gradient effect -->
+        <div class="p-6">
+          <div class="text-6xl font-bold mb-4 text-start ">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-orange-500">04</span>
+          </div>
+        <h2 class="text-2xl font-bold mb-2">Branding & strategy</h2>
+        <p class="text-sm  text-gray-300 mb-4">
           We craft powerful brand identities and strategic roadmaps that resonate with your audience. From logo design to brand positioning, we ensure consistency, clarity, and creativity across all channels to drive lasting impact.
         </p>
       </div>
+      </div>
+    </div>
     </div>
   
     <!-- Bottom Two Image Tiles -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-      <img src="./src/images/laptop-office-wooden-table-workplace-technology-concept.jpg" alt="Marketing Strategy Chart" class="rounded-2xl shadow-lg">
-      <img src="./src/images/image 60.jpg" alt="Drive More Sales" class="rounded-2xl shadow-lg">
+    <div class="flex  gap-2 items-center justify-center ">
+      <img src="./src/images/laptop-office-wooden-table-workplace-technology-concept.jpg" alt="Marketing Strategy Chart" class=" shadow-lg w-56 h-56 rounded-tl-full rounded-br-lg">
+      <img src="./src/images/image 60.jpg" alt="Drive More Sales" class="rounded-2xl shadow-lg w-[50%] h-56 ">
     </div>
 
-    <button class="mt-4 px-6 py-3 rounded-full border border-gray-700 text-gray-800 hover:shadow-md transition">
+    <button class="mt-4 px-6 py-3 rounded-full border border-gray-700 text-gray-800 hover:shadow-md transition mt-[30px]">
         <span class=" bg-gradient-to-r from-teal-700 to-orange-500 bg-clip-text text-transparent leading-tight font-semibold">Explore our Services</span>
       </button>
   </section>
@@ -170,12 +205,12 @@
   
     <!-- Client Logos -->
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center justify-center my-12">
-      <img src="./src/images/logo1.png" alt="Niela" class="max-h-12 mx-auto">
-      <img src="./src/images/logo2.png" alt="Bexley" class="max-h-12 mx-auto">
-      <img src="./src/images/logo3.png" alt="Camiya" class="max-h-12 mx-auto">
-      <img src="./src/images/logo4.png" alt="HiSleep" class="max-h-12 mx-auto">
-      <img src="./src/images/logo5.png" alt="Bamboo" class="max-h-12 mx-auto">
-      <img src="./src/images/logo6.png" alt="Finjet" class="max-h-12 mx-auto">
+      <img src="./src/images/nilam.png" alt="Niela" class="max-h-24 mx-auto">
+      <img src="./src/images/bexley.png" alt="Bexley" class="max-h-24 mx-auto">
+      <img src="./src/images/camiya.png" alt="Camiya" class="max-h-24 mx-auto">
+      <img src="./src/images/hisleep.png" alt="HiSleep" class="max-h-24 mx-auto">
+      <img src="./src/images/bambee.png" alt="Bamboo" class="max-h-24 mx-auto">
+      <img src="./src/images/finjet.png" alt="Finjet" class="max-h-24 mx-auto">
     </div>
   
     <hr class="border-t border-gray-300 my-10">
@@ -283,15 +318,18 @@
   </section>
   <section class="bg-black text-white py-16 px-8">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-5xl font-bold leading-tight">
-        <span class="inline-block transform -rotate-90 align-top mr-2 text-[#4CA6A8] font-extrabold text-5xl">360</span>
-        <span class="text-[#4CA6A8]">Degree </span>
-        <span class="block">
-          <span class="text-[#4CA6A8]">Digital </span>
-          <span class="text-gradient bg-gradient-to-r from-[#4CA6A8] via-[#888568] to-[#D66A3C] bg-clip-text text-transparent">marketing</span>
-        </span>
+      <h2 class="md:text-5xl font-bold leading-tight flex  ">
+        <span class="inline-block transform -rotate-90 align-bottom -mr-4 text-[#4CA6A8] font-extrabold text-4xl md:text-6xl h-10 mt-[16px] md:mt-10 mb-10 ">360</span>
+        <div class="flex flex-col ">
+
+          <span class="text-[#4CA6A8] md:text-6xl text-3xl ">Degree </span>
+          <span class="inline-block">
+            <span class="text-[#4CA6A8] md:text-6xl text-3xl">Digital </span>
+            <span class="text-gradient bg-gradient-to-r from-[#4CA6A8] md:text-6xl text-3xl via-[#888568] to-[#D66A3C] bg-clip-text text-transparent">marketing</span>
+          </span>
+        </div>
       </h2>
-      <p class="mt-6 text-lg leading-relaxed">
+      <p class="mt-6 text-lg leading-relaxed  md:ml-10">
         Recognized as the best digital marketing agency in Calicut, we provide end-to-end marketing solutions,
         covering every touchpoint of your brand's journey and ensuring a seamless, consistent approach across all digital platforms.
       </p>
@@ -308,14 +346,14 @@
       Be inspired by our work!
     </p>
   </section>
-  <section class="py-16 px-4 bg-white">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+  <section class="py-16 px-4 bg-white ">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 ">
       
       <!-- Card 1 -->
-      <div class="border rounded-2xl p-4 shadow-sm text-center">
+      <div class="border rounded-2xl p-4 shadow-sm text-center flex flex-col ">
         <img src="./src/images/WhatsApp Image 2025-04-02 at 13.20.43_dd388e0f.jpg" alt="Project Image" class="rounded-md mx-auto mb-4" />
-        <img src="./src/images/nilam.png" alt="Nielo Builders Logo" class="mx-auto h-12 mb-4" />
-        <div class="flex justify-center gap-4 mt-2">
+        <img src="./src/images/nilam.png" alt="Nielo Builders Logo" class="w-52 h-auto mb-4" />
+        <div class="flex justify-start gap-4 ">
           <button class="border border-black rounded-full px-4 py-1 text-sm hover:bg-black hover:text-white transition">
             SOCIAL MEDIA
           </button>
@@ -328,8 +366,8 @@
       <!-- Card 2 -->
       <div class="border rounded-2xl p-4 shadow-sm text-center">
         <img src="./src/images/WhatsApp Image 2025-04-02 at 13.20.43_dd388e0f.jpg" alt="Project Image" class="rounded-md mx-auto mb-4" />
-        <img src="./src/images/nilam.png" alt="Nielo Builders Logo" class="mx-auto h-12 mb-4" />
-        <div class="flex justify-center gap-4 mt-2">
+        <img src="./src/images/nilam.png" alt="Nielo Builders Logo" class="w-52 h-auto mb-4" />
+        <div class="flex justify-start gap-4">
           <button class="border border-black rounded-full px-4 py-1 text-sm hover:bg-black hover:text-white transition">
             SOCIAL MEDIA
           </button>
@@ -347,18 +385,19 @@
   
     <div class="max-w-7xl mx-auto">
       <!-- Heading -->
-      <div class="mb-12 text-center">
+      <div class="mb-12 text-start">
         <h2 class="text-5xl font-bold leading-tight">
-          <span class="text-[#4CA6A8]">HAPPY</span>
-          <span class="bg-gradient-to-r from-[#4CA6A8] via-[#888568] to-[#D66A3C] text-transparent bg-clip-text"> STORIES</span>
+          <span class="text-[#488484]">HAPPY</span><br>
+          <span class="bg-[#488484] text-transparent bg-clip-text"> STORIES</span>
         </h2>
-        <p class="mt-2 text-lg">
-          <span class="text-[#4CA6A8]">Wydex media</span> digital marketing <span class="text-[#D66A3C]">experiences</span>
+        <p class="mt-2 text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-gray-500 to-orange-500">
+          Wydex media digital marketing experiences
         </p>
+        
       </div>
   
       <!-- Rating and Reviews -->
-      <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+      <div class="flex flex-col lg:flex-row items-center justify-center gap-8 ">
         <!-- Rating Info -->
         <div class="text-center lg:text-left">
           <p class="text-lg font-semibold">EXCELLENT</p>
@@ -375,7 +414,7 @@
         </div>
   
         <!-- Reviews -->
-        <div class="flex items-center gap-4 overflow-x-auto">
+        <div class="flex items-center gap-4 md:w-full w-72 overflow-x-scroll ">
           <!-- Left arrow -->
           <button class="text-2xl">
             &#8592;
@@ -515,6 +554,11 @@
     </div>
   </footer>
   
-  
+  <script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
