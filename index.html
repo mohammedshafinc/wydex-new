@@ -7,6 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/@phosphor-icons/web"></script> <!-- Icon library -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 <body class="bg-white">
@@ -27,7 +28,7 @@
     <nav id="nav-menu" class="hidden md:block w-full md:w-auto ">
       <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm font-semibold text-gray-900 items-center">
         <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">Home</a></li>
-        <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">About us</a></li>
+        <li><a href="#aboutus" class="block py-2 md:py-0 hover:text-teal-600">About us</a></li>
         <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">Services</a></li>
         <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">Clients</a></li>
         <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">Blog</a></li>
@@ -75,7 +76,7 @@
     </div>
   </section>
 
-  <section class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 items-center  ">
+  <section class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 items-center" id="aboutus">
     <!-- Left Content -->
     <div class="p-6">
       <h2 class="text-4xl font-extrabold mb-6">ABOUT US</h2>
@@ -180,9 +181,31 @@
     </div>
   
     <!-- Bottom Two Image Tiles -->
-    <div class="flex  gap-2 items-center justify-center ">
-      <img src="./src/images/laptop-office-wooden-table-workplace-technology-concept.jpg" alt="Marketing Strategy Chart" class=" shadow-lg w-56 h-56 rounded-tl-full rounded-br-lg">
-      <img src="./src/images/image 60.jpg" alt="Drive More Sales" class="rounded-2xl shadow-lg w-[50%] h-56 ">
+    <div class="flex md:flex-row flex-col  gap-2 items-center justify-center ">
+      <img src="./src/images/laptop-office-wooden-table-workplace-technology-concept.jpg" alt="Marketing Strategy Chart" class=" shadow-lg md:w-56 w-full h-56 md:rounded-tl-full  md:rounded-br-lg">
+  <div class="flex justify-between item-center md:gap-0 gap-4 md:items-end bg-gradient-to-br from-[#0a0a0a] to-[#111] md:flex-row flex-col-reverse text-white rounded-2xl px-10 py-10 h-42 md:h-56 w-full md:w-[600px] shadow-inner shadow-white/5">
+  <!-- Text Section -->
+  <div class="flex-1 mr-2 ">
+    <div class="flex items-center space-x-4 mb-6  w-full">
+      <div class="w-10 h-[2px] bg-white"></div>
+      <p class="md:text-[18px]  text-lg font-semibold md:leading-tight font-sans text-white ">
+        Drive More Traffic and Sales
+      </p>
+    </div>
+    
+    <h1 class="md:text-[35px] text-lg font-semibold leading-tight font-sans">
+      Drive more traffic<br>and product sales
+    </h1> 
+   </div>
+
+  <!-- Bar Chart -->
+    <div class="flex mx-auto items-end gap-4 mt-4">
+      <div class="md:w-12 md:h-[90px] w-6 h-[45px]  bg-[#f9a88d]"></div>
+      <div class="md:w-12 md:h-[140px] w-6 h-[70px]  bg-[#fc8354]"></div>
+      <div class="md:w-12 md:h-[160px] w-6 h-[80px] bg-[#ed6a3a]"></div>
+    </div>
+</div>
+
     </div>
 
     <button class="mt-4 px-6 py-3 rounded-full border border-gray-700 text-gray-800 hover:shadow-md transition mt-[30px]">
@@ -205,12 +228,12 @@
   
     <!-- Client Logos -->
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center justify-center my-12">
-      <img src="./src/images/nilam.png" alt="Niela" class="max-h-24 mx-auto">
-      <img src="./src/images/bexley.png" alt="Bexley" class="max-h-24 mx-auto">
-      <img src="./src/images/camiya.png" alt="Camiya" class="max-h-24 mx-auto">
-      <img src="./src/images/hisleep.png" alt="HiSleep" class="max-h-24 mx-auto">
-      <img src="./src/images/bambee.png" alt="Bamboo" class="max-h-24 mx-auto">
-      <img src="./src/images/finjet.png" alt="Finjet" class="max-h-24 mx-auto">
+      <img src="./src/images/nilam.png" alt="Niela" class="max-h-8 mx-auto">
+      <img src="./src/clinetlogo/BEXLEY  best digital marketing agency in calicut.webp" alt="BEXLEY  best digital marketing agency in calicut.webp" class="max-h-24 mx-auto">
+      <img src="./src/clinetlogo/CAMIYA  best digital marketing agency in calicut.webp" alt="CAMIYA  best digital marketing agency in calicut.webp" class="max-h-24 mx-auto">
+      <img src="./src/clinetlogo/HISLEEP  best digital marketing agency in calicut.webp" alt="HISLEEP  best digital marketing agency in calicut.webp" class="max-h-24 mx-auto">
+      <img src="./src/clinetlogo/BAMBEE  best digital marketing agency in calicut.webp" alt="BAMBEE  best digital marketing agency in calicut.webp" class="max-h-24 mx-auto">
+      <img src="./src/clinetlogo/FINJET  best digital marketing agency in calicut.webp" alt="FINJET  best digital marketing agency in calicut.webp" class="max-h-24 mx-auto mt-10">
     </div>
   
     <hr class="border-t border-gray-300 my-10">
@@ -218,15 +241,15 @@
     <!-- Metrics -->
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
       <div>
-        <h3 class="text-5xl font-bold text-orange-500">20<sup>+</sup></h3>
+        <h3 class="text-5xl font-bold text-orange-500">4<sup>+</sup></h3>
         <p class="mt-2 text-sm uppercase font-semibold">Years of Industry<br><span class="font-normal">Experience</span></p>
       </div>
       <div>
-        <h3 class="text-5xl font-bold text-orange-500">1000<sup>+</sup></h3>
+        <h3 class="text-5xl font-bold text-orange-500">150<sup>+</sup></h3>
         <p class="mt-2 text-sm uppercase font-semibold">Successful<br><span class="font-normal">Projects</span></p>
       </div>
       <div>
-        <h3 class="text-5xl font-bold text-orange-500">17<sup>+</sup></h3>
+        <h3 class="text-5xl font-bold text-orange-500">4<sup>+</sup></h3>
         <p class="mt-2 text-sm uppercase font-semibold">Years in<br><span class="font-normal">Digital Marketing</span></p>
       </div>
     </div>
@@ -242,36 +265,62 @@
       with articles that scale your knowledge.
     </p>
   </section>
-  <section class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8">
-    <!-- Card 1 -->
-    <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
-      <img src="./src/images/medium-shot-woman-influencer-marketing.jpg" alt="Content Marketing Image" class="w-full object-cover h-64">
-      <div class="p-5 bg-gray-100 rounded-b-3xl">
-        <h3 class="font-semibold text-lg mb-2">The Role of Content Marketing in Building Brand Authority</h3>
-        <p class="text-sm text-gray-700 mb-4">
-          In today’s competitive digital landscape, establishing brand authority is essential for businesses aiming to differentiate themselves and build trust with their audience….
-        </p>
-        <button class="bg-black text-white px-6 py-1 rounded-full text-sm">Read more</button>
-      </div>
-    </div>
-  
-    <!-- Card 2 -->
-    <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
-      <img src="./src/images/medium-shot-woman-influencer-marketing (1).jpg" alt="Influencer Marketing Image" class="w-full object-cover h-64">
-      <div class="p-5 bg-gray-100 rounded-b-3xl relative">
-        <h3 class="font-semibold text-lg mb-2">Influencer Marketing in 2025: Trends and Strategies for Success</h3>
-        <p class="text-sm text-gray-700 mb-4">
-          Influencer marketing has become a pivotal strategy in the digital marketing landscape, enabling brands to connect authentically with their target audiences through trusted personalities….
-        </p>
-        <button class="bg-black text-white px-6 py-1 rounded-full text-sm">Read more</button>
-        <div class="absolute top-0 right-0 mt-2 mr-2 bg-black text-white rounded-full p-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 4l1.41 1.41L7.83 11H20v2H7.83l5.58 5.59L12 20l-8-8z"/>
-          </svg>
+
+
+  <!-- cards -->
+  <section class="max-w-7xl mx-auto px-4 py-12">
+    <div class="overflow-x-auto " style="::-webkit-scrollbar { display: none; }">
+      <div class="flex gap-6 md:gap-8 w-max md:w-full">
+        
+        <!-- Card 1 -->
+        <div class="w-[300px] md:min-w-[350px] bg-white rounded-3xl overflow-hidden shadow-lg">
+          <img src="./src/images/medium-shot-woman-influencer-marketing.jpg" alt="Content Marketing" class="w-full object-cover h-64">
+          <div class="p-5 bg-gray-100 rounded-b-3xl">
+            <h3 class="font-semibold text-lg mb-2">The Role of Content Marketing in Building Brand Authority</h3>
+            <p class="text-sm text-gray-700 mb-4">In today’s competitive digital landscape, establishing brand authority is essential for businesses aiming to differentiate themselves…</p>
+            <a href="./src/newpage.html" class="bg-black text-white px-6 py-1 rounded-full text-sm">Read more</a>
+          </div>
         </div>
+  
+        <!-- Card 2 -->
+        <div class="w-[300px] md:min-w-[350px] bg-white rounded-3xl overflow-hidden shadow-lg">
+          <img src="./src/images/medium-shot-woman-influencer-marketing (1).jpg" alt="Influencer Marketing" class="w-full object-cover h-64">
+          <div class="p-5 bg-gray-100 rounded-b-3xl relative">
+            <h3 class="font-semibold text-lg mb-2">Influencer Marketing in 2025: Trends and Strategies</h3>
+            <p class="text-sm text-gray-700 mb-4">Influencer marketing has become a pivotal strategy in the digital landscape, enabling brands to connect authentically…</p>
+            <button class="bg-black text-white px-6 py-1 rounded-full text-sm">Read more</button>
+            <!-- <div class="absolute top-0 right-0 mt-2 mr-2 bg-black text-white rounded-full p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 4l1.41 1.41L7.83 11H20v2H7.83l5.58 5.59L12 20l-8-8z"/>
+              </svg>
+            </div> -->
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="w-[300px] md:min-w-[350px] bg-white rounded-3xl overflow-hidden shadow-lg">
+          <img src="./src/images/medium-shot-woman-influencer-marketing.jpg" alt="Content Marketing" class="w-full object-cover h-64">
+          <div class="p-5 bg-gray-100 rounded-b-3xl">
+            <h3 class="font-semibold text-lg mb-2">The Role of Content Marketing in Building Brand Authority</h3>
+            <p class="text-sm text-gray-700 mb-4">In today’s competitive digital landscape, establishing brand authority is essential for businesses aiming to differentiate themselves…</p>
+            <a href="./src/newpage.html" class="bg-black text-white px-6 py-1 rounded-full text-sm">Read more</a>
+          </div>
+        </div>
+  
+        <!-- Card 4 -->
+        <div class="w-[300px] md:min-w-[350px] bg-white rounded-3xl overflow-hidden shadow-lg">
+          <img src="./src/images/medium-shot-woman-influencer-marketing.jpg" alt="Content Marketing" class="w-full object-cover h-64">
+          <div class="p-5 bg-gray-100 rounded-b-3xl">
+            <h3 class="font-semibold text-lg mb-2">The Role of Content Marketing in Building Brand Authority</h3>
+            <p class="text-sm text-gray-700 mb-4">In today’s competitive digital landscape, establishing brand authority is essential for businesses aiming to differentiate themselves…</p>
+            <a href="./src/newpage.html" class="bg-black text-white px-6 py-1 rounded-full text-sm">Read more</a>
+          </div>
+        </div>
+  
       </div>
     </div>
   </section>
+  
 
   <section class="relative bg-cover bg-center h-[400px]" style="background-image: url('./src/images/team-diversity-corporate-portrait-office-confidence-happy-proud-startup-woman-men-business-people-together-lobby-collaboration-partnership-support-teamwork.jpg');">
     <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-orange-500/60"></div>
@@ -404,13 +453,13 @@
           <div class="flex justify-center lg:justify-start my-2">
             <span class="text-yellow-400 text-2xl">★★★★★</span>
           </div>
-          <p class="text-base">
-            Based on 
-            <span class="inline-flex items-center">
-              <img src="./src/images/google (1).png" alt="Google" class="w-4 h-4 inline-block mx-1" />
-              reviews
-            </span>
-          </p>
+          <div class="text-base flex items-center gap-2 whitespace-nowrap">
+            <span>Based on</span>
+            <img src="./src/images/google (1).png" alt="Google" class="h-10 w-10 mt-2" />
+            <span>reviews</span>
+          </div>
+          
+          
         </div>
   
         <!-- Reviews -->
@@ -427,7 +476,7 @@
                 <span class="bg-gray-800 text-white rounded-full px-2 py-1 text-xs">C</span>
                 <p class="font-semibold text-sm">CGO INTERVAL</p>
               </div>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" class="w-5 h-5" />
+              <img src="./src/images/search.png" alt="Google" class="w-5 h-5" />
             </div>
             <p class="text-yellow-400 text-sm mb-1">★★★★★</p>
             <p class="text-sm text-gray-600">
@@ -442,8 +491,7 @@
                 <span class="bg-gray-800 text-white rounded-full px-2 py-1 text-xs">C</span>
                 <p class="font-semibold text-sm">CGO INTERVAL</p>
               </div>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" class="w-5 h-5" />
-            </div>
+              <img src="./src/images/search.png" alt="Google" class="w-5 h-5" />            </div>
             <p class="text-yellow-400 text-sm mb-1">★★★★★</p>
             <p class="text-sm text-gray-600">
               Incredible results! Wydex media helped us grow our online presence with their expert strategies...
@@ -456,8 +504,7 @@
                 <span class="bg-gray-800 text-white rounded-full px-2 py-1 text-xs">C</span>
                 <p class="font-semibold text-sm">CGO INTERVAL</p>
               </div>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" class="w-5 h-5" />
-            </div>
+              <img src="./src/images/search.png" alt="Google" class="w-5 h-5" />            </div>
             <p class="text-yellow-400 text-sm mb-1">★★★★★</p>
             <p class="text-sm text-gray-600">
               Incredible results! Wydex media helped us grow our online presence with their expert strategies...
@@ -475,8 +522,8 @@
     <hr class="mt-12 border-t border-gray-300" />
   </section>
   
-  <section class="bg-black rounded-3xl py-12 px-6 md:px-16 text-white relative overflow-hidden">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+  <section style="margin-left: 27px;" class="bg-black w-[374px]  md:w-[1300px] md:ml-[103px] rounded-3xl py-12 px-6 md:px-16 text-white relative overflow-hidden">
+    <div class=" flex flex-col md:flex-row items-center justify-between gap-6">
       
       <!-- Text -->
       <h2 class="text-3xl md:text-4xl font-semibold text-center md:text-left">
@@ -497,62 +544,73 @@
     </div>
   </section>
   
-  <footer class="bg-black text-white py-12 px-6 mt-10">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
+
+  <footer class="bg-black text-white py-12 px-6 mt-10 flex flex-col gap-12">
+    <h2 class="text-3xl mx-auto text-center font-semibold">Your growth partner – the best digital marketing agency in Calicut</h2>
+    
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-16 text-sm">
       
       <!-- Brand Message -->
-      <div>
-        <h2 class="text-xl font-semibold mb-4">Your growth partner – the best digital marketing agency in Calicut</h2>
-        <p class="mb-4">Your growth partner – the best digital marketing agency in Calicut</p>
+      <div class="lg:col-span-2">
+        <p class="mb-4 text-2xl font-semibold">Your growth partner – the best digital marketing agency in Calicut</p>
         <button class="border border-white rounded-full px-6 py-2 hover:bg-white hover:text-black transition">
           Contact us
         </button>
         <div class="flex gap-3 mt-6">
-          <a href="#" class="bg-white text-black rounded-full p-2"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="bg-white text-black rounded-full p-2"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="bg-white text-black rounded-full p-2"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="bg-white text-black rounded-full p-2"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="bg-white text-black rounded-full w-8 h-8 justify-center items-center flex"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="bg-white text-black rounded-full w-8 h-8 justify-center items-center flex"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="bg-white text-black rounded-full w-8 h-8 justify-center items-center flex"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="bg-white text-black rounded-full w-8 h-8 justify-center items-center flex"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
-  
+      
       <!-- Navigation Links -->
       <div>
-        <h3 class="font-semibold mb-3">Navigation</h3>
+        <h3 class="font-semibold mb-3 text-xl">Navigation</h3>
         <ul class="space-y-2">
-          <li><a href="#" class="hover:underline">Home</a></li>
-          <li><a href="#" class="hover:underline">About us</a></li>
-          <li><a href="#" class="hover:underline">Services</a></li>
-          <li><a href="#" class="hover:underline">Portfolio</a></li>
-          <li><a href="#" class="hover:underline">Testimonials</a></li>
-          <li><a href="#" class="hover:underline">Careers</a></li>
-          <li><a href="#" class="hover:underline">Contact</a></li>
+          <li><a href="#" class="hover:underline text-sm text-gray-500">Home</a></li>
+          <li><a href="#" class="hover:underline text-sm text-gray-500">About us</a></li>
+          <li><a href="#" class="hover:underline text-sm text-gray-500">Services</a></li>
+          <li><a href="#" class="hover:underline text-sm text-gray-500">Portfolio</a></li>
+          <li><a href="#" class="hover:underline text-sm text-gray-500">Testimonials</a></li>
+          <li><a href="#" class="hover:underline text-sm text-gray-500">Careers</a></li>
+          <li><a href="#" class="hover:underline text-sm text-gray-500">Contact</a></li>
         </ul>
       </div>
-  
+      
       <!-- Licence -->
       <div>
-        <h3 class="font-semibold mb-3">Licence</h3>
+        <h3 class="font-semibold mb-3 text-xl">Licence</h3>
         <ul class="space-y-2">
-          <li>Privacy policy</li>
-          <li>Copyright</li>
-          <li>Email address</li>
+          <li class="hover:underline text-sm text-gray-500">Privacy policy</li>
+          <li class="hover:underline text-sm text-gray-500">Copyright</li>
+          <li class="hover:underline text-sm text-gray-500">Email address</li>
         </ul>
       </div>
-  
+      
       <!-- Contact Info -->
       <div>
-        <h3 class="font-semibold mb-3">Licence</h3>
+        <h3 class="font-semibold mb-3 text-xl">Contact</h3>
         <ul class="space-y-2">
-          <li class="flex items-center gap-2"><span>📞</span> +91 96331 80779</li>
-          <li class="flex items-center gap-2"><span>✉️</span> wydexmedia@gmail.com</li>
-          <li class="flex items-start gap-2"><span>📍</span>
-            <span>3rd floor, M Sons Building<br> Cherooty Road, Calicut, India 673001</span>
+          <li class="flex items-center gap-2 text-sm text-gray-500">
+            <span class="text-white"><i class="fa-solid fa-phone"></i></span> 
+            <span class="break-all">+91 96331 80779</span>
+          </li>
+          <li class="flex items-center gap-2 text-sm text-gray-500">
+            <span class="text-white"><i class="fa-solid fa-envelope"></i></span> 
+            <span class="break-all">wydexmedia@gmail.com</span>
+          </li>
+          <li class="flex items-start gap-2 text-sm">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span class="text-gray-500">3rd floor, M Sons Building<br> Cherooty Road, Calicut, India 673001</span>
           </li>
         </ul>
       </div>
-  
+      
     </div>
   </footer>
+  
+ 
   
   <script>
     document.getElementById('mobile-menu-button').addEventListener('click', function() {

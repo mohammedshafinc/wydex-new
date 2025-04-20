@@ -1,0 +1,10 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    @apply font-jakarta;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
