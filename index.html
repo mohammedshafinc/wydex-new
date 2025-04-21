@@ -29,13 +29,13 @@
       <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm font-semibold text-gray-900 items-center">
         <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">Home</a></li>
         <li><a href="#aboutus" class="block py-2 md:py-0 hover:text-teal-600">About us</a></li>
-        <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">Services</a></li>
-        <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">Clients</a></li>
-        <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">Blog</a></li>
-        <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">Career</a></li>
-        <li><a href="#" class="block py-2 md:py-0 hover:text-teal-600">Testimonials</a></li>
-        <li><a href="" class="mt-4 md:mt-0 flex items-center justify-center space-x-2 w-28 px-2 h-8 rounded-full bg-gradient-to-r from-teal-700 to-orange-500 text-white font-medium shadow-md hover:shadow-lg transition">
-          <i class="ph ph-phone text-lg"></i>
+        <li><a href="#service" class="block py-2 md:py-0 hover:text-teal-600">Services</a></li>
+        <li><a href="#clients" class="block py-2 md:py-0 hover:text-teal-600">Clients</a></li>
+        <li><a href="#blog" class="block py-2 md:py-0 hover:text-teal-600">Blog</a></li>
+        <li><a href="#career" class="block py-2 md:py-0 hover:text-teal-600">Career</a></li>
+        <li><a href="#testmonial" class="block py-2 md:py-0 hover:text-teal-600">Testimonials</a></li>
+        <li><a href="" class="mt-4 md:mt-0 flex items-center justify-center space-x-2 w-32 px-2 h-8 rounded-full bg-gradient-to-r from-teal-700 to-orange-500 text-white font-medium shadow-md hover:shadow-lg transition">
+          <i style="padding-top: 4px; margin-right: 11px;" class="ph ph-phone text-[16px] bg-black rounded-full w-6 h-6 pl-1"></i>
           <span>Contact Us</span></a>
         </li>
       </ul>
@@ -109,7 +109,7 @@
 
   <hr class="border-t border-gray-300 w-11/12 mx-auto my-8" />
 
-  <section class="py-16 px-6 max-w-7xl mx-auto text-center">
+  <section class="py-16 px-6 max-w-7xl mx-auto text-center" id="service">
     <h2 class="text-4xl font-bold mb-4">SERVICES</h2>
     <p class="text-lg font-semibold mb-12">
       Why Choose the Best Digital Marketing Agency in Calicut?
@@ -118,29 +118,36 @@
     <!-- Services Cards -->
     <div class="grid grid-cols-1  lg:grid-cols-4 gap-6 mb-12">
       <!-- Card 1 -->
-      <div class="w-full md:w-64 rounded-2xl shadow-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-900 to-black text-white">
-        <!-- Number with gradient effect -->
+      <div class="w-full md:w-64 rounded-2xl transform transition-transform duration-500 hover:scale-105
+              shadow-lg overflow-hidden bg-gradient-to-br from-gray-900 to-black text-white group relative transition-shadow duration-500 hover:shadow-4xl transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-600">
         <div class="p-6">
-          <div class="text-6xl font-bold mb-4 text-start ">
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-orange-500">01</span>
+          <!-- Number with sliding animation -->
+          <div class="text-6xl font-bold mb-4 text-start relative">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-orange-500 inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-x-20 ">
+              01
+            </span>
           </div>
-          
+      
           <!-- Title -->
           <h2 class="text-2xl font-bold mb-4">Social Media Marketing</h2>
-          
+      
           <!-- Content -->
           <p class="text-sm text-gray-300 mb-4">
             Wydax Media is one of the best digital marketing agencies in Calicut, helping businesses grow with expert social media marketing strategies. We create engaging content, targeted ads, and data-driven campaigns to boost your brand on Facebook, Instagram, and LinkedIn.
           </p>
         </div>
       </div>
+      
+      
   
       <!-- Card 2 -->
-      <div class="w-full md:w-64 rounded-2xl shadow-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-900 to-black text-white">
+      <div class="w-full md:w-64 rounded-2xl transform transition-transform duration-500 hover:scale-105
+      shadow-lg overflow-hidden bg-gradient-to-br from-gray-900 to-black text-white group relative transition-shadow duration-500 hover:shadow-4xl transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-600">
         <!-- Number with gradient effect -->
         <div class="p-6">
           <div class="text-6xl font-bold mb-4 text-start ">
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-orange-500">02</span>
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-orange-500 inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-x-20 ">
+              02</span>
           </div>
           
           <!-- Title -->
@@ -152,11 +159,12 @@
       </div>
   
       <!-- Card 3 -->
-      <div class="w-full md:w-64 rounded-2xl shadow-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-900 to-black text-white">
+      <div class="w-full md:w-64 rounded-2xl transform transition-transform duration-500 hover:scale-105
+      shadow-lg overflow-hidden bg-gradient-to-br from-gray-900 to-black text-white group relative transition-shadow duration-500 hover:shadow-4xl transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-600">
         <!-- Number with gradient effect -->
         <div class="p-6">
           <div class="text-6xl font-bold mb-4 text-start ">
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-orange-500">03</span>
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-orange-500 inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-x-20 ">03</span>
           </div>
         <h2 class="text-2xl font-bold mb-2">Web design & development</h2>
         <p class="text-sm  text-gray-300 mb-4">
@@ -165,11 +173,12 @@
       </div>
       </div>
       <!-- Card 4 -->
-      <div class="w-full md:w-64 rounded-2xl shadow-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-900 to-black text-white">
+      <div class="w-full md:w-64 rounded-2xl transform transition-transform duration-500 hover:scale-105
+      shadow-lg overflow-hidden bg-gradient-to-br from-gray-900 to-black text-white group relative transition-shadow duration-500 hover:shadow-4xl transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-600">
         <!-- Number with gradient effect -->
         <div class="p-6">
           <div class="text-6xl font-bold mb-4 text-start ">
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-orange-500">04</span>
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-orange-500 inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-x-20 ">04</span>
           </div>
         <h2 class="text-2xl font-bold mb-2">Branding & strategy</h2>
         <p class="text-sm  text-gray-300 mb-4">
@@ -215,7 +224,7 @@
 
   <hr class="border-t border-gray-300 w-11/12 mx-auto my-8" />
 
-  <section class="py-16 px-6 max-w-7xl mx-auto text-center">
+  <section class="py-16 px-6 max-w-7xl mx-auto text-center" id="clients">
     <h2 class="text-4xl font-bold mb-6">CLIENTS</h2>
     <p class="font-semibold text-lg">
       Trusted by businesses of all sizes,<br>
@@ -268,7 +277,7 @@
 
 
   <!-- cards -->
-  <section class="max-w-7xl mx-auto px-4 py-12">
+  <section class="max-w-7xl mx-auto px-4 py-12" id="blog">
     <div class="overflow-x-auto " style="::-webkit-scrollbar { display: none; }">
       <div class="flex gap-6 md:gap-8 w-max md:w-full">
         
@@ -284,7 +293,7 @@
   
         <!-- Card 2 -->
         <div class="w-[300px] md:min-w-[350px] bg-white rounded-3xl overflow-hidden shadow-lg">
-          <img src="./src/images/medium-shot-woman-influencer-marketing (1).jpg" alt="Influencer Marketing" class="w-full object-cover h-64">
+          <img src="./src/images/Influencer marketing in 2025 Trends and strategies for success.webp" alt="Influencer Marketing" class="w-full object-cover h-64">
           <div class="p-5 bg-gray-100 rounded-b-3xl relative">
             <h3 class="font-semibold text-lg mb-2">Influencer Marketing in 2025: Trends and Strategies</h3>
             <p class="text-sm text-gray-700 mb-4">Influencer marketing has become a pivotal strategy in the digital landscape, enabling brands to connect authentically…</p>
@@ -299,20 +308,20 @@
   
         <!-- Card 3 -->
         <div class="w-[300px] md:min-w-[350px] bg-white rounded-3xl overflow-hidden shadow-lg">
-          <img src="./src/images/medium-shot-woman-influencer-marketing.jpg" alt="Content Marketing" class="w-full object-cover h-64">
+          <img src="./src/images/SEO Meets AI how artificial intelligence is reshaping search in 2025.webp" alt="Content Marketing" class="w-full object-cover h-64">
           <div class="p-5 bg-gray-100 rounded-b-3xl">
-            <h3 class="font-semibold text-lg mb-2">The Role of Content Marketing in Building Brand Authority</h3>
-            <p class="text-sm text-gray-700 mb-4">In today’s competitive digital landscape, establishing brand authority is essential for businesses aiming to differentiate themselves…</p>
+            <h3 class="font-semibold text-lg mb-2">SEO Meets AI: How Artificial Intelligence is Reshaping Search in 2025</h3>
+            <p class="text-sm text-gray-700 mb-4">Search Engine Optimization (SEO) is no longer just about keywords, backlinks, and rankings. In 2025, SEO has entered…</p>
             <a href="./src/newpage.html" class="bg-black text-white px-6 py-1 rounded-full text-sm">Read more</a>
           </div>
         </div>
   
         <!-- Card 4 -->
         <div class="w-[300px] md:min-w-[350px] bg-white rounded-3xl overflow-hidden shadow-lg">
-          <img src="./src/images/medium-shot-woman-influencer-marketing.jpg" alt="Content Marketing" class="w-full object-cover h-64">
+          <img src="./src/images/Top digital marketing trends to watch in 2025.webp" alt="Content Marketing" class="w-full object-cover h-64">
           <div class="p-5 bg-gray-100 rounded-b-3xl">
-            <h3 class="font-semibold text-lg mb-2">The Role of Content Marketing in Building Brand Authority</h3>
-            <p class="text-sm text-gray-700 mb-4">In today’s competitive digital landscape, establishing brand authority is essential for businesses aiming to differentiate themselves…</p>
+            <h3 class="font-semibold text-lg mb-2">Top digital marketing trends to watch in 2025.</h3>
+            <p class="text-sm text-gray-700 mb-4">As we move further into the digital era, the world of marketing continues to evolve at lightning speed. New technologies, shifting .…</p>
             <a href="./src/newpage.html" class="bg-black text-white px-6 py-1 rounded-full text-sm">Read more</a>
           </div>
         </div>
@@ -322,7 +331,7 @@
   </section>
   
 
-  <section class="relative bg-cover bg-center h-[400px]" style="background-image: url('./src/images/team-diversity-corporate-portrait-office-confidence-happy-proud-startup-woman-men-business-people-together-lobby-collaboration-partnership-support-teamwork.jpg');">
+  <section id="career" class="relative bg-cover bg-center h-[400px]" style="background-image: url('./src/images/team-diversity-corporate-portrait-office-confidence-happy-proud-startup-woman-men-business-people-together-lobby-collaboration-partnership-support-teamwork.jpg');">
     <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-orange-500/60"></div>
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
       <h2 class="text-4xl font-bold mb-4">CAREER</h2>
@@ -337,7 +346,7 @@
 
   <hr class="border-t border-gray-300 my-10">
 
-  <section class="py-16 bg-white text-center">
+  <section class="py-16 bg-white text-center" id="testmonial">
     <h2 class="text-4xl font-bold mb-4">TESTIMONIALS</h2>
     <h3 class="text-2xl font-semibold mb-10">They are satisfied with the results we provide</h3>
   
@@ -429,7 +438,7 @@
     </div>
   </section>
         
-  <section class="py-16 px-4 bg-white">
+  <section class="py-16 px-4 bg-white ml-0 md:ml-[88px]">
     <hr class="mb-8 border-t border-gray-300" />
   
     <div class="max-w-7xl mx-auto">
@@ -522,7 +531,7 @@
     <hr class="mt-12 border-t border-gray-300" />
   </section>
   
-  <section style="margin-left: 27px;" class="bg-black w-[374px]  md:w-[1300px] md:ml-[103px] rounded-3xl py-12 px-6 md:px-16 text-white relative overflow-hidden">
+  <section class="bg-black w-[374px] ml-0 md:ml-[27px] md:w-[1200px] rounded-3xl py-12 px-6 md:px-16 text-white relative overflow-hidden">
     <div class=" flex flex-col md:flex-row items-center justify-between gap-6">
       
       <!-- Text -->
