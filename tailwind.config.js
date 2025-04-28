@@ -8,6 +8,11 @@ module.exports = {
         jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
       },
     },
+    variants: {
+      extend: {
+        grayscale: ['hover'],
+      }
+    }
   },
   plugins: [],
 }
